@@ -1,8 +1,18 @@
 header{
-	height: 7vh;
+
 	padding: 15px 0;
-	background: #222;
+	background: $primary-colorv;
 	a {
+		font-size: 18px;
 		color: #fff;
+		text-decoration: none;
+		&:hover {
+			color: orange;
+		}
 	}
+}
+
+.navigation {
+	display: flex;
+	gap: 25px;
 }
