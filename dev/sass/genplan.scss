@@ -2,9 +2,11 @@
     fill: aqua;
     fill-opacity: 0;
     stroke: #00c3fe;
+    stroke-opacity: 0;
     stroke-width: 2px;
    
     &:hover {
         fill-opacity: 0.4;
+        stroke-opacity: 1;
     }
 }
