@@ -1,3 +1,10 @@
-h1 {
-    color: blue;
+.genplan-item {
+    fill: aqua;
+    fill-opacity: 0;
+    stroke: #00c3fe;
+    stroke-width: 2px;
+   
+    &:hover {
+        fill-opacity: 0.4;
+    }
 }

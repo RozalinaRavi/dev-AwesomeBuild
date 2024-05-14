@@ -1,18 +1,26 @@
 header{
 
 	padding: 15px 0;
-	background: $primary-colorv;
+	background: $primary-color;
+	.container {
+		display: flex;
+	}
 	a {
 		font-size: 18px;
 		color: #fff;
 		text-decoration: none;
 		&:hover {
-			color: orange;
+			color: $secondary-color;
+		}
+		&.logo {
+			max-width: 150px;
 		}
 	}
 }
 
-.navigation {
+.header-nav {
 	display: flex;
 	gap: 25px;
+	align-items: flex-end;
+	margin-left: 48px;
 }
