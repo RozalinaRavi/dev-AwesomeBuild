@@ -1,12 +1,30 @@
-.genplan-item {
-    fill: aqua;
-    fill-opacity: 0;
-    stroke: #00c3fe;
-    stroke-opacity: 0;
-    stroke-width: 2px;
-   
-    &:hover {
-        fill-opacity: 0.4;
-        stroke-opacity: 1;
+.genplan {
+    position: relative;
+     &-item {
+         fill: aqua;
+         fill-opacity: 0;
+         stroke: #00c3fe;
+         stroke-opacity: 0;
+         stroke-width: 2px;
+
+         &:hover {
+             fill-opacity: 0.4;
+             stroke-opacity: 1;
     }
+}
+}
+
+.template-nav {
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+    background: #fff;
+    padding: 24px;
+    border-radius: 12px;
+    &__title {
+        margin-bottom: 12px;
+    }
+}
+.information-list {
+    list-style: none;
 }
