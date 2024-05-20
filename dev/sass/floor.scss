@@ -7,15 +7,18 @@
 		}
 	}
 
-	&:active {
-		.flat-path {
-			fill: #04ff005c;
-			stroke: #05ff00;
-		}
-	}
+	
 
 	&-path {
 		fill: #ff000000;
+		stroke-width: 5px;
+	}
+}
+
+.active {
+	.flat-path {
+		fill: #04ff005c;
+		stroke: #05ff00;
 		stroke-width: 5px;
 	}
 }
