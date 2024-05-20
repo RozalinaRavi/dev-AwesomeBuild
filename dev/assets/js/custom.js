@@ -1,4 +1,4 @@
-const genplanItem = document.querySelectorAll('.item-path')
+const planItem = document.querySelectorAll('.item-path')
 const cellAdress = document.querySelector('#adress')
 const cellFloors = document.querySelector('#floors')
 const cellFreeFlats = document.querySelector('#freeFlats')
