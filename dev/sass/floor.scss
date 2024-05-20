@@ -1,0 +1,40 @@
+.flat {
+	&:hover {
+		.flat-path {
+			stroke: #80d34e;
+			stroke-width: 5px;
+			fill: #81d34e86;
+		}
+	}
+
+	&:active {
+		.flat-path {
+			fill: #04ff005c;
+			stroke: #05ff00;
+		}
+	}
+
+	&-path {
+		fill: #ff000000;
+		stroke-width: 5px;
+	}
+}
+
+.flat-path {
+	stroke: aqua;
+	stroke-width: 2px;
+}
+.flat-status-path {
+	fill: white;
+	stroke: black;
+	stroke-width: 2px;
+}
+.flat-status-cell__path {
+	fill: #80d34e;
+	stroke: black;
+	stroke-width: 2px;
+}
+.flat-status-cell__text {
+	fill: black;
+	font-weight: bold;
+}

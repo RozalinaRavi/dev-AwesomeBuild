@@ -1,0 +1,25 @@
+.floor-options {
+    @extend .container;
+
+    background: #4d4e47;
+    color: beige;
+    border: 1px solid;
+    border-radius: 10px;
+    display: flex;
+    gap: 24px;
+    padding: 24px;
+    margin: 12px auto;
+
+    &-item {
+        max-width: 140px;
+        width: 100%;
+        text-align: center;
+        background: #33333b;
+        color: beige;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 4px;
+    }
+}

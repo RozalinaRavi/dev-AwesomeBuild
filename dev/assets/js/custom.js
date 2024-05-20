@@ -1,38 +1,34 @@
-const genplanItem = document.querySelectorAll('.genplan-item-path')
+const genplanItem = document.querySelectorAll('.item-path')
 const cellAdress = document.querySelector('#adress')
 const cellFloors = document.querySelector('#floors')
 const cellFreeFlats = document.querySelector('#freeFlats')
+const cellSoldFlats = document.querySelector('#soldFlats')
 
 
-genplanItem.forEach(build => {
-    build.addEventListener('mouseover', () => {
-        const thisAdress = build.getAttribute('data-adress')
-        const thisFloors = build.getAttribute('data-floors')
-        const thisFreeFlats = build.getAttribute('data-free-flats')
-        
 
 
-        cellAdress.innerHTML = thisAdress
-        cellFloors.innerHTML = thisFloors
-        cellFreeFlats.innerHTML = thisFreeFlats
-    
+const showInformation = (cell, dataAttr) => planItem.forEach(path => {
+    path.addEventListener('mouseover', () => {
+        cell.innerHTML = path.getAttribute(dataAttr)
     })
 
-        const buildFreeFlats = build.getAttribute('data-free-flats') 
+    const buildFreeFlats = path.getAttribute('data-free-flats')
 
-        if (buildFreeFlats === "0") {
-            build.classList.add('sold')
-        }
+    buildFreeFlats === "0" ? path.classList.add('sold') : null
 
-
-
-
-        if (build.classList.contains ('sold')) {
-            const buildLink = build.closest('.genplan-item-link')
-
-            buildLink.addEventListener('click', (event) => {
-                event.preventDefault()
-            })
-        }
+    if (path.classList.contains('sold')) {
+        const buildLink = path.closest('.item-link')
+        buildLink.addEventListener('click', (event) => {
+            event.preventDefault()
+        })
+    }
 })
 
+
+showInformation(cellAdress, 'data-adress')
+showInformation(cellFloors, 'data-floors')
+showInformation(cellFreeFlats, 'data-free-flats')
+
+if(document.querySelector('.build-item-page')) {
+    showInformation(cellSoldFlats, 'data-sold-flats')
+}
