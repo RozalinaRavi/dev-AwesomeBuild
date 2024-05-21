@@ -3,7 +3,7 @@ const flatArray = [
         id: '0',
         house: '7', 
         floor: '2',
-        flatNumber: '1',
+        flatNumber: 1,
         rooms: '3',
         square: '82,3',
         price: '$1750',
@@ -15,7 +15,7 @@ const flatArray = [
         id: '1',
         house: '7', 
         floor: '2',
-        flatNumber: '2',
+        flatNumber: 2,
         rooms: '2',
         square: '67,7',
         price: '$1750',
@@ -27,7 +27,7 @@ const flatArray = [
         id: '2',
         house: '7', 
         floor: '2',
-        flatNumber: '3',
+        flatNumber: 3,
         rooms: '2',
         square: '60,7',
         price: '$1750',
@@ -39,7 +39,7 @@ const flatArray = [
         id: '3',
         house: '7', 
         floor: '2',
-        flatNumber: '4',
+        flatNumber: 4,
         rooms: '3',
         square: '82,0',
         price: '$1750',
@@ -51,7 +51,7 @@ const flatArray = [
         id: '4',
         house: '7', 
         floor: '2',
-        flatNumber: '5',
+        flatNumber: 5,
         rooms: '3',
         square: '82,0',
         price: '$1750',
@@ -63,7 +63,7 @@ const flatArray = [
         id: '5',
         house: '7', 
         floor: '2',
-        flatNumber: '6',
+        flatNumber: 6,
         rooms: '3',
         square: '82,0',
         price: '$1750',
@@ -75,7 +75,7 @@ const flatArray = [
         id: '6',
         house: '7', 
         floor: '2',
-        flatNumber: '7',
+        flatNumber: 7,
         rooms: '3',
         square: '82,0',
         price: '$1750',
@@ -87,7 +87,7 @@ const flatArray = [
         id: '7',
         house: '7', 
         floor: '2',
-        flatNumber: '8',
+        flatNumber: 8,
         rooms: '3',
         square: '82,0',
         price: '$1750',
@@ -99,7 +99,7 @@ const flatArray = [
         id: '8',
         house: '7', 
         floor: '2',
-        flatNumber: '9',
+        flatNumber: 9,
         rooms: '3',
         square: '82,0',
         price: '$1750',
@@ -112,7 +112,7 @@ const flatArray = [
 
 const installFloor = () => {
     const flats = document.querySelectorAll('.flat');
-    const flatInfo = document.querySelector('.flat-options');
+    const flatInfo = document.querySelector('.floor-options');
 
 const removeActiveClass = ()=> flats.forEach(flat => {
     flat.classList.remove('active');
@@ -122,7 +122,7 @@ const initialValue = [{
     id: '1',
     house: '7', 
     floor: '2',
-    flatNumber: '2',
+    flatNumber: 2,
     rooms: '2',
     square: '67,7',
     price: '$1750',
@@ -186,7 +186,7 @@ flats.forEach((flat, index, arr) => {
 
         const thisFlat = flat.getAttribute('data-flat-number');
 
-        let flatNumber = flatArray.filter(item => item.flatNumber === Number(thisFlat))
+        let flatNumber = flatArray.filter(item => item.flatNumber = Number(thisFlat))
         renderInformation(flatNumber)
     })
 })
