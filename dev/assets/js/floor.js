@@ -186,7 +186,7 @@ flats.forEach((flat, index, arr) => {
 
         const thisFlat = flat.getAttribute('data-flat-number');
 
-        let flatNumber = flatArray.filter(item => item.flatNumber = Number(thisFlat))
+        let flatNumber = flatArray.filter(item => item.flatNumber == (thisFlat))
         renderInformation(flatNumber)
     })
 })

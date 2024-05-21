@@ -28,6 +28,7 @@ const showInformation = (cell, dataAttr) => planItem.forEach(path => {
 showInformation(cellAdress, 'data-adress')
 showInformation(cellFloors, 'data-floors')
 showInformation(cellFreeFlats, 'data-free-flats')
+showInformation(cellSoldFlats, 'data-sold-flats')
 
 if(document.querySelector('.build-item-page')) {
     showInformation(cellSoldFlats, 'data-sold-flats')
