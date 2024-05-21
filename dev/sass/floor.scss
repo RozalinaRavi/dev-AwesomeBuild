@@ -7,33 +7,45 @@
 		}
 	}
 
-	
+	&.active {
+		.flat-path {
+			fill: #04ff005c;
+			stroke: #05ff00;
+		}
+	}
 
 	&-path {
-		fill: #ff000000;
-		stroke-width: 5px;
+		stroke: aqua;
+		stroke-width: 2px;
 	}
+
+	&.action {
+		.flat-status-cell__path {
+			fill: #80D34E;
+		}
+	}
+	&.booked {
+		.flat-status-cell__path {
+			fill: #6B68FF;
+		}
+	}
+	&.sold {
+		.flat-status-cell__path {
+			fill: #D34E4E;
+		}
+	}
+
+
 }
 
-.active {
-	.flat-path {
-		fill: #04ff005c;
-		stroke: #05ff00;
-		stroke-width: 5px;
-	}
-}
 
-.flat-path {
-	stroke: aqua;
-	stroke-width: 2px;
-}
 .flat-status-path {
 	fill: white;
 	stroke: black;
 	stroke-width: 2px;
 }
 .flat-status-cell__path {
-	fill: #80d34e;
+	fill: #00DEFC;
 	stroke: black;
 	stroke-width: 2px;
 }
