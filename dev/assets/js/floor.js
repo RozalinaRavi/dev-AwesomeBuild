@@ -112,7 +112,7 @@ const flatArray = [
 
 const installFloor = () => {
     const flats = document.querySelectorAll('.flat');
-    const flatsInfo = document.querySelector('.flat-options');
+    const flatInfo = document.querySelector('.flat-options');
 
 const removeActiveClass = ()=> flats.forEach(flat => {
     flat.classList.remove('active');
@@ -173,7 +173,8 @@ const renderInformation = (array) => {
 	</div>
         `)
     })
-    flatInformation.innerHTML = flatInformation
+    flatInfo.innerHTML = flatInformation
+
 }
 
 renderInformation(initialValue)
