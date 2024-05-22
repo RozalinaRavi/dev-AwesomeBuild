@@ -189,7 +189,22 @@ flats.forEach((flat, index, arr) => {
         let flatNumber = flatArray.filter(item => item.flatNumber == (thisFlat))
         renderInformation(flatNumber)
     })
+
+    flats.forEach(flat => {
+        if (flat.classList.contains('booked')) {
+            flat.querySelector('.flat-status-cell__tspan').innerHTML = 'Бронь'
+        } else if (flat.classList.contains('action')) {
+            flat.querySelector('.flat-status-cell__tspan').innerHTML = 'Акція'
+        } else if (flat.classList.contains('already-sold')) {
+            flat.querySelector('.flat-status-cell__tspan').innerHTML = 'Продано'
+        } else {
+            flat.querySelector('.flat-status-cell__tspan').innerHTML = 'Вільна'
+        }
+    })
 })
 }
 
 document.querySelector('.floor-item-page') ? installFloor() : undefined;
+
+
+const flats = document.querySelectorAll('.flat');
