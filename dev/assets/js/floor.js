@@ -56,7 +56,7 @@ const flatArray = [
         square: '82,0',
         price: '$1750',
         totalPrice: '$143 500',
-        status: 'booked'
+        status: 'free'
     },
 
     {
@@ -68,7 +68,7 @@ const flatArray = [
         square: '82,0',
         price: '$1750',
         totalPrice: '$143 500',
-        status: 'action'
+        status: 'free'
     },
 
     {
@@ -80,7 +80,7 @@ const flatArray = [
         square: '82,0',
         price: '$1750',
         totalPrice: '$143 500',
-        status: 'action'
+        status: 'sold'
     },
 
     {
@@ -104,7 +104,7 @@ const flatArray = [
         square: '82,0',
         price: '$1750',
         totalPrice: '$143 500',
-        status: 'action'
+        status: 'booked'
     },
 ]
 
@@ -171,7 +171,11 @@ const renderInformation = (array) => {
 		<div>Статус квартири:</div>
 		<div>${item.status}</div>
 	</div>
-        `)
+        
+    <div class="floor-options-item">
+		<a href="flat-item.html" class="flat-link">Дивитись квартиру</a>
+	</div>
+    `)
     })
     flatInfo.innerHTML = flatInformation
 

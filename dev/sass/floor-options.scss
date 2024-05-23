@@ -23,3 +23,19 @@
         border-radius: 4px;
     }
 }
+
+.flat-link {
+    border: #36434a;
+    background-color: #373c44;
+    border-radius: 10px;
+    text-decoration: dotted;
+    color: beige;
+
+    &:hover {
+        box-shadow: 3px 2px 5px 1px #e8eaefbf;
+    }
+    &:active {
+        color: #81827c;
+    }
+    
+}

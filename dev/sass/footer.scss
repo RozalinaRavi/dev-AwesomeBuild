@@ -1,7 +1,24 @@
 footer{
-    height: 100px;
+   
     background: $secondary-color;
     margin-top: auto;
+    padding: 60px;
+    color: beige;
 }
-
- 
+.footer-row {
+    display: flex;
+    gap: 200px;
+}
+.footer-nav-list {
+    list-style: none;
+    &__item {
+        margin-bottom: 24px;
+    }
+}
+.contacts-link {
+    text-decoration: none;
+    color: beige;
+}
+.footer-title {
+    margin-bottom: 30px;
+}
